@@ -3,27 +3,39 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		713F293825AD6DA20037C5C9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713F293725AD6DA20037C5C9 /* AppDelegate.swift */; };
 		713F293A25AD6DA20037C5C9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713F293925AD6DA20037C5C9 /* SceneDelegate.swift */; };
-		713F293C25AD6DA20037C5C9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713F293B25AD6DA20037C5C9 /* ViewController.swift */; };
 		713F293F25AD6DA20037C5C9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 713F293D25AD6DA20037C5C9 /* Main.storyboard */; };
 		713F294125AD6DA40037C5C9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 713F294025AD6DA40037C5C9 /* Assets.xcassets */; };
 		713F294425AD6DA40037C5C9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 713F294225AD6DA40037C5C9 /* LaunchScreen.storyboard */; };
+		713F294E25AD6EE70037C5C9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 713F294D25AD6EE70037C5C9 /* GoogleService-Info.plist */; };
+		713F296225AD76F60037C5C9 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713F296125AD76F60037C5C9 /* Note.swift */; };
+		713F296525AD77830037C5C9 /* NotesModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713F296425AD77830037C5C9 /* NotesModel.swift */; };
+		713F296825AD77AE0037C5C9 /* NoteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713F296725AD77AE0037C5C9 /* NoteViewController.swift */; };
+		713F297625AD912F0037C5C9 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 713F297525AD912F0037C5C9 /* MainViewController.swift */; };
+		DB8019B7FEF3C6660A558BB0 /* Pods_izNotes.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 47DAF75EDE5BE19CB59CF571 /* Pods_izNotes.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		47DAF75EDE5BE19CB59CF571 /* Pods_izNotes.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_izNotes.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A9AACEC03BDDFB9A3298366 /* Pods-izNotes.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-izNotes.release.xcconfig"; path = "Target Support Files/Pods-izNotes/Pods-izNotes.release.xcconfig"; sourceTree = "<group>"; };
 		713F293425AD6DA20037C5C9 /* izNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = izNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		713F293725AD6DA20037C5C9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		713F293925AD6DA20037C5C9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		713F293B25AD6DA20037C5C9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		713F293E25AD6DA20037C5C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		713F294025AD6DA40037C5C9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		713F294325AD6DA40037C5C9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		713F294525AD6DA40037C5C9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		713F294D25AD6EE70037C5C9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		713F296125AD76F60037C5C9 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		713F296425AD77830037C5C9 /* NotesModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesModel.swift; sourceTree = "<group>"; };
+		713F296725AD77AE0037C5C9 /* NoteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteViewController.swift; sourceTree = "<group>"; };
+		713F297525AD912F0037C5C9 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		A7B04EADF4BF19DC8384A2C2 /* Pods-izNotes.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-izNotes.debug.xcconfig"; path = "Target Support Files/Pods-izNotes/Pods-izNotes.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +43,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB8019B7FEF3C6660A558BB0 /* Pods_izNotes.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		21E38AD65F270DCD8C77AB40 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				47DAF75EDE5BE19CB59CF571 /* Pods_izNotes.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		713F292B25AD6DA20037C5C9 = {
 			isa = PBXGroup;
 			children = (
 				713F293625AD6DA20037C5C9 /* izNotes */,
 				713F293525AD6DA20037C5C9 /* Products */,
+				FEC5286A08EDB37BC77DEC4D /* Pods */,
+				21E38AD65F270DCD8C77AB40 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +81,50 @@
 			children = (
 				713F293725AD6DA20037C5C9 /* AppDelegate.swift */,
 				713F293925AD6DA20037C5C9 /* SceneDelegate.swift */,
-				713F293B25AD6DA20037C5C9 /* ViewController.swift */,
-				713F293D25AD6DA20037C5C9 /* Main.storyboard */,
+				713F296B25AD77C70037C5C9 /* Model */,
+				713F296A25AD77BC0037C5C9 /* View */,
+				713F296F25AD77DB0037C5C9 /* Controller */,
 				713F294025AD6DA40037C5C9 /* Assets.xcassets */,
 				713F294225AD6DA40037C5C9 /* LaunchScreen.storyboard */,
 				713F294525AD6DA40037C5C9 /* Info.plist */,
+				713F294D25AD6EE70037C5C9 /* GoogleService-Info.plist */,
 			);
 			path = izNotes;
+			sourceTree = "<group>";
+		};
+		713F296A25AD77BC0037C5C9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				713F293D25AD6DA20037C5C9 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		713F296B25AD77C70037C5C9 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				713F296425AD77830037C5C9 /* NotesModel.swift */,
+				713F296125AD76F60037C5C9 /* Note.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		713F296F25AD77DB0037C5C9 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				713F297525AD912F0037C5C9 /* MainViewController.swift */,
+				713F296725AD77AE0037C5C9 /* NoteViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FEC5286A08EDB37BC77DEC4D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A7B04EADF4BF19DC8384A2C2 /* Pods-izNotes.debug.xcconfig */,
+				6A9AACEC03BDDFB9A3298366 /* Pods-izNotes.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +134,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 713F294825AD6DA40037C5C9 /* Build configuration list for PBXNativeTarget "izNotes" */;
 			buildPhases = (
+				CDBD2F829AD9248B3C5F1A3D /* [CP] Check Pods Manifest.lock */,
 				713F293025AD6DA20037C5C9 /* Sources */,
 				713F293125AD6DA20037C5C9 /* Frameworks */,
 				713F293225AD6DA20037C5C9 /* Resources */,
+				319380C64E022CE4BDD7E063 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,6 +187,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				713F294425AD6DA40037C5C9 /* LaunchScreen.storyboard in Resources */,
+				713F294E25AD6EE70037C5C9 /* GoogleService-Info.plist in Resources */,
 				713F294125AD6DA40037C5C9 /* Assets.xcassets in Resources */,
 				713F293F25AD6DA20037C5C9 /* Main.storyboard in Resources */,
 			);
@@ -132,14 +195,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		319380C64E022CE4BDD7E063 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-izNotes/Pods-izNotes-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-izNotes/Pods-izNotes-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-izNotes/Pods-izNotes-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CDBD2F829AD9248B3C5F1A3D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-izNotes-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		713F293025AD6DA20037C5C9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				713F293C25AD6DA20037C5C9 /* ViewController.swift in Sources */,
+				713F297625AD912F0037C5C9 /* MainViewController.swift in Sources */,
 				713F293825AD6DA20037C5C9 /* AppDelegate.swift in Sources */,
 				713F293A25AD6DA20037C5C9 /* SceneDelegate.swift in Sources */,
+				713F296225AD76F60037C5C9 /* Note.swift in Sources */,
+				713F296825AD77AE0037C5C9 /* NoteViewController.swift in Sources */,
+				713F296525AD77830037C5C9 /* NotesModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +391,7 @@
 		};
 		713F294925AD6DA40037C5C9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7B04EADF4BF19DC8384A2C2 /* Pods-izNotes.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +411,7 @@
 		};
 		713F294A25AD6DA40037C5C9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A9AACEC03BDDFB9A3298366 /* Pods-izNotes.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
