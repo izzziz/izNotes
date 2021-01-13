@@ -1,6 +1,6 @@
 # izNotes
 
-IzNotes is a simple note taking application designed to encorporate the use of Firebase Database.
+IzNotes is a simple note taking application designed to incorporate the use of Firebase Realtime Database.
 
 ## App Architecture
 
@@ -12,7 +12,9 @@ IzNotes is a simple note taking application designed to encorporate the use of F
 - Put all the notes instances into an array and pass the whole array to the viewController.
 - When the user taps on a specific note from the tableView it opens up a detail viewController.
 - On the detail viewController the user can see the title/content and can edit, save or delete that note. 
-- Then all that information makes its way to the NotesModel class so it can write that data to the database
+- Then all that information makes its way to the NotesModel class so it can write that data to the database.
+
+
 
 
 
