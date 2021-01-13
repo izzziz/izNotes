@@ -10,10 +10,14 @@ import UIKit
 class MainViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var starButton: UIBarButtonItem!
     
     private var notesModel = NotesModel()
     private var notes = [Note]()
     
+    private var isStarFiltered = false
+    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -24,8 +28,17 @@ class MainViewController: UIViewController {
         // Set self as the delegate for the notes Model
         notesModel.delegate = self
         
-        // Retrieve all notes
-        notesModel.getNotes()
+        // Set the status of the star filter button
+        setStarFilterButton()
+        
+        // Retrieve all notes according to star filter
+
+        if isStarFiltered {
+            notesModel.getNotes(true)
+        } else {
+            notesModel.getNotes()
+        }
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -37,10 +50,36 @@ class MainViewController: UIViewController {
             
             // Set the note and notes model properties of the note vc
             noteViewVontroller.note = notes[tableView.indexPathForSelectedRow!.row]
+            
+            // Deselect the selected row so that it doesnt interfere with new not creation
+            tableView.deselectRow(at: tableView.indexPathForSelectedRow!, animated: false)
+            
+        }
+        
+        // Weather its a new note or a selected note, we still want ot pass through the notes model
             noteViewVontroller.notesModel = self.notesModel
         }
+    
+    func setStarFilterButton() {
+        
+        let imageName = isStarFiltered ? "star.fill" : "star"
+        starButton.image = UIImage(systemName: imageName)
+    }
+    
+    @IBAction func startFilterTapped(_ sender: UIBarButtonItem) {
+        
+        // Toggle the star filter status
+        isStarFiltered.toggle()
+        
+        // Run the query
+        isStarFiltered ? notesModel.getNotes(true) : notesModel.getNotes()
+        
+        // Update the star button
+        setStarFilterButton()
+        
     }
 }
+
 
 extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -50,7 +89,7 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "Notecell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "NoteCell", for: indexPath)
         
         // TODO: Customize cell
         

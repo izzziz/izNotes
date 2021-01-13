@@ -17,13 +17,31 @@ class NotesModel {
     
     var delegate:NotesModelProtocol?
     
-    func getNotes() {
+    var listener:ListenerRegistration?
+    
+    deinit {
+        
+        // Unregister database listener
+        listener?.remove()
+    }
+    
+    func getNotes(_ starredOnly:Bool = false) {
+        
+        // Detach any listener
+        listener?.remove()
         
         // Get a referenec to the database
         let db = Firestore.firestore()
         
+        var query:Query =  db.collection("notes")
+        
+        // If we're only looking for sta notes, update the query
+        if starredOnly {
+            query = query.whereField("isStarred", isEqualTo: true)
+        }
+        
         // Get all the notes
-        db.collection("notes").getDocuments { (snapshot, error) in
+        self.listener = query.addSnapshotListener({ (snapshot, error) in
             
             // Check for eeors
             if error == nil && snapshot != nil {
@@ -47,8 +65,46 @@ class NotesModel {
                     self.delegate?.notesRetrieved(notes: notes)
                 }
             }
-        }
+        })
+    }
+    
+    func deleteNote(_ n:Note) {
+        
+        let db = Firestore.firestore()
+        
+        db.collection("notes").document(n.docId).delete()
+    }
+    
+    func saveNote(_ n:Note) {
+        
+        let db = Firestore.firestore()
+        
+        db.collection("notes").document(n.docId).setData(noteToDict(n))
+        
+    }
+    
+    func updateFaveStatus(_ docId:String, _ isStarred:Bool) {
+        
+        let db = Firestore.firestore()
+        
+        db.collection("notes").document(docId).updateData(["isStarred":isStarred])
+        
+    }
+    
+    func noteToDict(_ n:Note) -> [String:Any] {
+        
+        var dict = [String:Any]()
+        
+        dict["docId"] = n.docId
+        dict["title"] = n.title
+        dict["body"] = n.body
+        dict["createdAt"] = n.createdAt
+        dict["lastUpdatedAt"] = n.lastUpdatedAt
+        dict["isStarred"] = n.isStarred
+        
+        return dict
     }
 }
+
 
 

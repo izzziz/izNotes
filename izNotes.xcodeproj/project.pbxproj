@@ -103,8 +103,8 @@
 		713F296B25AD77C70037C5C9 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				713F296425AD77830037C5C9 /* NotesModel.swift */,
 				713F296125AD76F60037C5C9 /* Note.swift */,
+				713F296425AD77830037C5C9 /* NotesModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
