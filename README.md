@@ -14,6 +14,10 @@ IzNotes is a simple note taking application designed to incorporate the use of F
 - On the detail viewController the user can see the title/content and can edit, save or delete that note. 
 - Then all that information makes its way to the NotesModel class so it can write that data to the database.
 
+## Screenshot
+
+[](ccc)
+
 
 
 
