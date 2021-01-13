@@ -16,7 +16,7 @@ IzNotes is a simple note taking application designed to incorporate the use of F
 
 ## Screenshot
 
-![](ccc)
+![](ccc.png)
 
 
 
